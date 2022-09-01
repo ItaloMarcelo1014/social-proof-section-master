@@ -1,0 +1,240 @@
+/*RESET CSS*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    font-size: 0.93rem;
+}
+
+p{
+    font-family: 'League Spartan', sans-serif;
+}
+
+/*ROOT COLORS*/
+:root{
+    
+/*### Primary*/
+
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+
+/*### Neutral*/
+
+--Dark-Grayish-Magenta-1: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta-2: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+}
+
+
+
+
+/*Titulo e paragrafo*/
+
+h1{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.2rem;
+    color: var(--Very-Dark-Magenta);
+    margin: 25px 45px 25px 45px;
+    text-align: center;
+}
+
+
+span{
+   color: var(--Soft-Pink);
+}
+
+
+
+.txt {
+    width: 250px;
+    margin-left: 30px;
+    text-align: center;
+    color: var(--Dark-Grayish-Magenta-1);
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+.proof{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    color: var(--Light-Grayish-Magenta-2);
+    line-height: 20px;
+}
+
+
+/*Container*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 25px ;
+}
+
+
+
+.box-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta-2);
+    width: 300px;
+    padding: 10px;
+    margin: 10px 15px 5px 15px;
+    border-radius: 5px;
+}
+
+.line-start{
+    margin-bottom: 5px;
+}
+
+
+
+/*Review*/
+
+.review{
+    color: var(--Very-Dark-Magenta);
+}
+
+/*card*/
+
+.card-profile{
+    width: 300px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card-profile img{
+    display: block;
+    width: 40px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.im{
+    display: flex;
+}
+
+
+.perfil{
+    position: relative;
+    top: -10px;
+    background-color: red;
+}
+
+.p-card{
+    margin-top: 10px;
+   color: var(--White);
+}
+
+
+/*media QUERY*/
+
+@media (min-width:1000px){
+    /*Container*/
+
+    .container{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+   /*PROOf*/
+
+    .proof{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-width: 75vw;
+        min-height: 100vh;
+       
+    }
+
+    /*BOX_STAR LINE-START */
+
+    .box-start{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 350px;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+
+    
+    .line-start{
+    margin:0 10px 0 10px;
+    }
+
+    .start-1{
+        position: relative;
+     
+    }
+    .start-2{
+        position: relative;
+        left: 35px;
+    }
+    .start-3{
+        position: relative;
+        left: 75px;
+    }
+   /*card and  profile*/
+    #card{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -45px;
+    }
+    .profile-2{
+        position: relative;
+        top: 25px;
+    }
+
+    .profile-3{
+        position: relative;
+        top: 45px;
+    }
+    /*BLOCO title and review*/
+    
+    .bloco{
+    position: relative;
+    left: -125px;
+    }
+    h1{
+        text-align: left;
+        margin: 25px;
+    }
+    .txt{
+        text-align: left;
+        width: 350px;
+        }
+        .review{
+            margin-left: 10px;
+        }
+}
